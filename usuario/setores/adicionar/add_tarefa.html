@@ -10,18 +10,26 @@
 		</header>
 
 		<main>
-			<ul>
-				<h3>Descrição</h3>
-				<input type="text" style="height: 100px;" placeholder="Descrição..."><br>
+			<h3>Descrição</h3>
 
-				<h3>Funcinários</h3>
-				<a href="funcionarios.html"><input type="submit" value="+"></a>
-			</ul>
+			<form id="desc" action="form_action.asp">
+				<input type="text" name='fdescrever' style="height: 100px;" placeholder="Descrição..."><br>
+			</form>
+
+			<h3>Funcionários</h3>
+			<a href="funcionarios.html"><input type="submit" value="+"></a>
+
+			<form id="data" action="form_action.asp">
+				<br><input type="datetime-local"><br>
+			</form>
 		</main>
 
 		<footer>
 			<button onclick="goBack()">Cancelar</button>
-			<button onclick="goBack()">Salvar</button>
+			<!-- <button onclick="goBack()">Salvar</button> -->
+			<button onclick="myFunction()">Salvar</button>
+
+			<p id="demo"></p>
 		</footer>
 
 		<script>
@@ -29,5 +37,19 @@
     		window.history.back();
 			}
 		</script>
+
+		<script>
+		function myFunction() {
+		    var x = document.getElementById("desc");
+		    var text = "";
+		    var i;
+		    for (i = 0; i < x.length ;i++) {
+		        text += x.elements[i].value + "<br>";
+		    }
+		    document.getElementById("demo").innerHTML = text;
+		    // window.history.back();
+		}
+		</script>
+
 	</body>
 </html>

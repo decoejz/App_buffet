@@ -1,4 +1,4 @@
-function dados_add() {
+function dados_adicionar() {
     var x = document.getElementById("desc");
     var text = "";
     var i;
@@ -6,5 +6,10 @@ function dados_add() {
         text += x.elements[i].value + "<br>";
     }
     document.getElementById("demo").innerHTML = text;
+	window.history.back();
+}
+
+
+function voltar() {
 	window.history.back();
 }

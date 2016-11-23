@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Adiconar</title>
+		<script type="text/javascript" src='dados_add.js'></script>
 	</head>
 	<body>
 		<header>
@@ -26,30 +27,7 @@
 
 		<footer>
 			<button onclick="goBack()">Cancelar</button>
-			<!-- <button onclick="goBack()">Salvar</button> -->
-			<button onclick="myFunction()">Salvar</button>
-
-			<p id="demo"></p>
+			<button onclick="dados_adicionar()">Salvar</button>
 		</footer>
-
-		<script>
-			function goBack() {
-    		window.history.back();
-			}
-		</script>
-
-		<script>
-		function myFunction() {
-		    var x = document.getElementById("desc");
-		    var text = "";
-		    var i;
-		    for (i = 0; i < x.length ;i++) {
-		        text += x.elements[i].value + "<br>";
-		    }
-		    document.getElementById("demo").innerHTML = text;
-		    // window.history.back();
-		}
-		</script>
-
 	</body>
 </html>

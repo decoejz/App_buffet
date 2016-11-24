@@ -1,13 +1,30 @@
 document.addEventListener("DOMContentLoaded", function() {
 	var dados = function dados_adicionar() {
-		    var x = document.getElementById("desc");
+			var tarefa = document.getElementById("nome");
 		    var text = "";
 		    var i;
-		    for (i = 0; i < x.length ;i++) {
-		        text += x.elements[i].value + "<br>";
+		    for (i = 0; i < tarefa.length ;i++) {
+		        text += tarefa.elements[i].value + "<br>";
 		    }
-		    document.getElementById("demo").innerHTML = text;
-			window.history.back();
+		    document.getElementById("nome_tarefa").innerHTML = text;
+
+		    var descricao = document.getElementById("desc");
+		    var text = "";
+		    var i;
+		    for (i = 0; i < descricao.length ;i++) {
+		        text += descricao.elements[i].value + "<br>";
+		    }
+		    document.getElementById("descricao_tarefa").innerHTML = text;
+
+		    var data = document.getElementById("data");
+		    var text = "";
+		    var i;
+		    for (i = 0; i < data.length ;i++) {
+		        text += data.elements[i].value + "<br>";
+		    }
+		    document.getElementById("data_tarefa").innerHTML = text;
+
+			//window.history.back();
 		}
 
 
@@ -21,4 +38,5 @@ document.addEventListener("DOMContentLoaded", function() {
 	salvando.addEventListener("click", dados);
 
 	cancelando.addEventListener("click", voltar_tela);
-}
+
+})

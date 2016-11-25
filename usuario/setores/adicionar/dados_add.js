@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		        text += tarefa.elements[i].value + "<br>";
 		    }
 		    document.getElementById("nome_tarefa").innerHTML = text;
+		    console.log(text)
+		    localStorage.setItem("Tarefa", tarefa);
 
 		    var descricao = document.getElementById("desc");
 		    var text = "";
@@ -15,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		        text += descricao.elements[i].value + "<br>";
 		    }
 		    document.getElementById("descricao_tarefa").innerHTML = text;
+		    console.log(text)
+		    localStorage.setItem("Descricao", descricao);
 
 		    var data = document.getElementById("data");
 		    var text = "";
@@ -23,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		        text += data.elements[i].value + "<br>";
 		    }
 		    document.getElementById("data_tarefa").innerHTML = text;
+		    console.log(text)
+		    localStorage.setItem("Data", data);
 
 			//window.history.back();
 		}

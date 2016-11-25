@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Iluminação e Som</title>
+		<script type="text/javascript" src='adicionar/dados_add.js'></script>
 	</head>
 	<body>
 		<header><h3>Iluminação e Som</h3></header>
@@ -18,12 +19,27 @@
 			<button onclick="goBack()">Voltar</button>
 		</footer>
 
+		<div id="r1"></div>
+		<div id="r2"></div>
+		<div id="r3"></div>
+
 		<script>
 			function goBack() {
     		window.history.back();
 			}
 		</script>
+		<script>
+			if (typeof(Storage) !== "undefined") {
+				document.getElementById("r1").innerHTML = localStorage.getItem("Tarefa");
+				var teste = localStorage.getItem("Tarefa");
+				document.getElementById("r2").innerHTML = localStorage.getItem("Descricao");
+				document.getElementById("r3").innerHTML = localStorage.getItem("Data");
+			}
+			else{
+				document.getElementById("r1").innerHTML = "Sem Tarefas"
+				document.getElementById("r2").innerHTML = "Sem Tarefas"
+				document.getElementById("r3").innerHTML = "Sem Tarefas"
+			}
+		</script>
 	</body>
 </html>
-
-

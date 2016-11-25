@@ -28,18 +28,5 @@
     		window.history.back();
 			}
 		</script>
-		<script>
-			if (typeof(Storage) !== "undefined") {
-				document.getElementById("r1").innerHTML = localStorage.getItem("Tarefa");
-				var teste = localStorage.getItem("Tarefa");
-				document.getElementById("r2").innerHTML = localStorage.getItem("Descricao");
-				document.getElementById("r3").innerHTML = localStorage.getItem("Data");
-			}
-			else{
-				document.getElementById("r1").innerHTML = "Sem Tarefas"
-				document.getElementById("r2").innerHTML = "Sem Tarefas"
-				document.getElementById("r3").innerHTML = "Sem Tarefas"
-			}
-		</script>
 	</body>
 </html>

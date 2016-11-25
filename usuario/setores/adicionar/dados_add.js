@@ -1,36 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
 	var dados = function dados_adicionar() {
-			var tarefa = document.getElementById("nome");
-		    var text = "";
-		    var i;
-		    for (i = 0; i < tarefa.length ;i++) {
-		        text += tarefa.elements[i].value + "<br>";
-		    }
-		    document.getElementById("nome_tarefa").innerHTML = text;
-		    console.log(text)
-		    localStorage.setItem("Tarefa", tarefa);
+			var conversao = localStorage.getItem("Infos")
+			var infos = JSON.parse(conversao);
 
-		    var descricao = document.getElementById("desc");
-		    var text = "";
-		    var i;
-		    for (i = 0; i < descricao.length ;i++) {
-		        text += descricao.elements[i].value + "<br>";
-		    }
-		    document.getElementById("descricao_tarefa").innerHTML = text;
-		    console.log(text)
-		    localStorage.setItem("Descricao", descricao);
+			var nome_tarefa = document.getElementById("nome");
 
-		    var data = document.getElementById("data");
-		    var text = "";
-		    var i;
-		    for (i = 0; i < data.length ;i++) {
-		        text += data.elements[i].value + "<br>";
-		    }
-		    document.getElementById("data_tarefa").innerHTML = text;
-		    console.log(text)
-		    localStorage.setItem("Data", data);
+		    var descricao_tarefa = document.getElementById("desc");
 
-			//window.history.back();
+		    var data_tarefa = document.getElementById("data");
+		
+		    infos[nome_tarefa]=[descricao_tarefa,data_tarefa];
+		    var conversao = JSON.stringify(infos);
+			localStorage.setItem("Infos", conversao);
+
+			window.history.back();
 		}
 
 

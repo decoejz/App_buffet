@@ -20,6 +20,13 @@
 			<a href="cadastro/pag_indisponivel.html"><input type="submit" value="Cadastra-se"></a>
 			<a href="usuario/pag_principal.html"><input type="submit" value="Submit"></a>
 		</main>
-
 	</body>
+
+	<script>
+		if (localStorage.getItem("Infos") == undefined){
+			var infos = {};
+			var conversao = JSON.stringify(infos);
+			localStorage.setItem("Infos", conversao);
+		}
+	</script>
 </html>

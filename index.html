@@ -23,10 +23,30 @@
 	</body>
 
 	<script>
-		if (localStorage.getItem("Infos") == undefined){
+		if (localStorage.getItem("Infos_comercial") == undefined){
 			var infos = {};
 			var conversao = JSON.stringify(infos);
-			localStorage.setItem("Infos", conversao);
+			localStorage.setItem("Infos_comercial", conversao);
+		}
+		if (localStorage.getItem("Infos_cozinha") == undefined){
+			var infos = {};
+			var conversao = JSON.stringify(infos);
+			localStorage.setItem("Infos_cozinha", conversao);
+		}
+		if (localStorage.getItem("Infos_decoracao") == undefined){
+			var infos = {};
+			var conversao = JSON.stringify(infos);
+			localStorage.setItem("Infos_decoracao", conversao);
+		}
+		if (localStorage.getItem("Infos_iluminacao_som") == undefined){
+			var infos = {};
+			var conversao = JSON.stringify(infos);
+			localStorage.setItem("Infos_iluminacao_som", conversao);
+		}
+		if (localStorage.getItem("Infos_manutencao") == undefined){
+			var infos = {};
+			var conversao = JSON.stringify(infos);
+			localStorage.setItem("Infos_manutencao", conversao);
 		}
 	</script>
 </html>

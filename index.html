@@ -27,38 +27,18 @@
 			  <label for="pwd">Senha</label>
 			  <input type="password" class="form-control" id="pwd">
 			</div>
-		<div class="btn-group btn-group-lg">
+
 			<a href="cadastro/pag_indisponivel.html"><input type="submit" class="btn btn-primary" value="Cadastra-se"></a>
 			<a href="usuario/pag_principal.html"><input type="submit" class="btn btn-primary" value="Entrar"></a>
-		</div>
+
 		</main>
 	</body>
 
 	<script>
-		if (localStorage.getItem("Infos_comercial") == undefined){
+		if (localStorage.getItem("Infos") == undefined){
 			var infos = {};
 			var conversao = JSON.stringify(infos);
-			localStorage.setItem("Infos_comercial", conversao);
-		}
-		if (localStorage.getItem("Infos_cozinha") == undefined){
-			var infos = {};
-			var conversao = JSON.stringify(infos);
-			localStorage.setItem("Infos_cozinha", conversao);
-		}
-		if (localStorage.getItem("Infos_decoracao") == undefined){
-			var infos = {};
-			var conversao = JSON.stringify(infos);
-			localStorage.setItem("Infos_decoracao", conversao);
-		}
-		if (localStorage.getItem("Infos_iluminacao_som") == undefined){
-			var infos = {};
-			var conversao = JSON.stringify(infos);
-			localStorage.setItem("Infos_iluminacao_som", conversao);
-		}
-		if (localStorage.getItem("Infos_manutencao") == undefined){
-			var infos = {};
-			var conversao = JSON.stringify(infos);
-			localStorage.setItem("Infos_manutencao", conversao);
+			localStorage.setItem("Infos", conversao);
 		}
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

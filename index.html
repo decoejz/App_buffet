@@ -28,8 +28,10 @@
 			  <input type="password" class="form-control" id="pwd">
 			</div>
 
-			<a href="cadastro/pag_indisponivel.html"><input type="submit" class="btn btn-primary" value="Cadastra-se"></a>
-			<a href="usuario/pag_principal.html"><input type="submit" class="btn btn-primary" value="Entrar"></a>
+			<div class="btn-group, text-center">
+				<a href="cadastro/pag_indisponivel.html"><input type="submit" class="btn btn-primary" value="Cadastra-se"></a>
+				<a href="usuario/pag_principal.html"><input type="submit" class="btn btn-primary" value="Entrar"></a>
+			</div>
 
 		</main>
 	</body>
@@ -38,7 +40,6 @@
 		if (localStorage.getItem("Infos_comercial") == undefined){
   			var infos = {};
   			var conversao = JSON.stringify(infos);
- 			localStorage.setItem("Infos", conversao);
  			localStorage.setItem("Infos_comercial", conversao);
  		}
  		if (localStorage.getItem("Infos_cozinha") == undefined){

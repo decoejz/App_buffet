@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		    var data_tarefa = document.getElementById("data");
 		
 		    infos[nome_tarefa]=[descricao_tarefa,data_tarefa];
+		    var conversao = JSON.stringify(nome_tarefa);
+		    var conversao = JSON.stringify(descricao_tarefa);
+		    var conversao = JSON.stringify(data_tarefa);
 		    var conversao = JSON.stringify(infos);
 			localStorage.setItem("Infos", conversao);
 

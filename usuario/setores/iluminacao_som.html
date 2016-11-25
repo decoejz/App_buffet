@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Iluminação e Som</title>
+		<script type="text/javascript" src='iluminacao_som.js'></script>
 	</head>
 	<body>
 		<header><h3>Iluminação e Som</h3></header>
@@ -10,8 +11,7 @@
 		<main>
 			<h4>Tarefas</h4>
 
-			<ul>
-				<li ></li>
+			<ul id='lista_de_tarefas'>
 			</ul>
 
 			<a href="adicionar/add_tarefa.html"><input type="submit" value="+"></a>
@@ -26,11 +26,6 @@
 			function goBack() {
     		window.history.back();
 			}
-		</script>
-		<script>
-			console.log(document.referrer)
-			var conversao = localStorage.getItem("Infos_iluminacao_som");
-			var infos = JSON.parse(conversao);
 		</script>
 	</body>
 </html>

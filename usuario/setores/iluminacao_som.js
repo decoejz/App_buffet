@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	if (filhos == true){
 		document.getElementById('lista_de_tarefas').innerHTML = '';
 
-		//console.log(document.referrer);
 		var conversao = localStorage.getItem("Infos_iluminacao_som");
 		var infos = JSON.parse(conversao);
 		

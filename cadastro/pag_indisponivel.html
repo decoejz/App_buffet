@@ -16,7 +16,15 @@
 	<h5>Em breve lançaremos essa página!</h5>
 	<h6>Agradecemos a compreenção!</h6>
 
-	<a href="../index.html"><input type="submit" value="Voltar"></a>
+	<footer>
+		<button onclick="goBack()">Voltar</button>
+	</footer>
+
+	<script>
+		function goBack() {
+		window.history.back();
+		}
+	</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			newItem.className = "list-group-item";
 
 			a.textContent = i;
-			a.setAttribute('href', "../../cadastro/pag_indisponivel.html");
+			a.setAttribute('href', "editar.html");
 			newItem.appendChild(a);
 			ulist.appendChild(newItem);
 		}

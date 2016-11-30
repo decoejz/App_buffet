@@ -7,13 +7,14 @@ document.addEventListener("DOMContentLoaded", function() {
 		var infos = JSON.parse(conversao);
 		
 		for (var i in infos) {				
-			var a = document.createElement("a");
+			var a = document.createElement("button");
 			var ulist = document.getElementById("lista_de_tarefas");
 			var newItem = document.createElement("li");
 			newItem.className = "list-group-item";
+			newItem.setAttribute("id", i);
 
 			a.textContent = i;
-			a.setAttribute('href', "editar.html");
+			a.setAttribute('onclick', "editando()");
 			newItem.appendChild(a);
 			ulist.appendChild(newItem);
 		}

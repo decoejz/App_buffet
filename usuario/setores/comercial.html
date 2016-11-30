@@ -10,6 +10,7 @@
 	
 		<title>Comercial</title>
 		<script type="text/javascript" src='comercial.js'></script>
+		<!-- <script type="text/javascript" src='editar.js'></script> -->
 	</head>
 	<body>
 		<header><h3>Comercial</h3></header>
@@ -37,6 +38,16 @@
 			var pagina = 'Comercial'
 			var conversao = JSON.stringify(pagina);
 			localStorage.setItem("Pagina", conversao);
+
+			function editando() {
+				console.log(document.getElementById("teste").innerHTML);
+				var Nova_Tarefa = document.getElementById("teste").innerHTML;
+				var descrição_tarefa = 1;
+
+
+				var opened = window.open("");
+				opened.document.write("<html><head><title>Editar</title></head><body><header><form id=\"nome1\" action=\"form_action.asp\"><input id=\"nome\" type=\"text\" placeholder="+Nova_Tarefa+"><br></form></header><main><h3>Descrição</h3><form id=\"desc1\" action=\"form_action.asp\"><input id=\"desc\" type=\"text\" name=\'fdescrever\' style=\"height: 100px;\" placeholder="+descrição_tarefa+"><br></form><h3>Funcionários</h3><a href=\"adicionar/funcionarios.html\"><input class=\"btn btn-success\" ctype=\"submit\" value=\"+\"></a><form id=\"data1\" action=\"form_action.asp\"><br><input id=\"data\" type=\"datetime-local\"><br></form></main><footer><button class=\'cancelando btn btn-warning\'>Cancelar</button><button class=\'salvando btn btn-info\'>Salvar</button></footer></body></html>");
+			}
 		</script>
 	</body>
 </html>

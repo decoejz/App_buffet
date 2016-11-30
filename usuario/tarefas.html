@@ -2,25 +2,31 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
 		<title>Tarefas por Setor</title>
 	</head>
 	<body>
 		<header>
-			<h3>Tarefas por Setor</h3>
+			<h3 class="text-center">Tarefas por Setor</h3>
 		</header>
 
 		<main>
-			<ul>
-				<li><a href="setores/iluminacao_som.html">Iluminação e Som</a></li>
-				<li><a href="setores/cozinha.html">Cozinha</a></li>
-				<li><a href="setores/decoracao.html">Decoração</a></li>
-				<li><a href="setores/comercial.html">Comercial</a></li>
-				<li><a href="setores/manutencao.html">Manutenção</a></li>
+			<ul class="list-group">
+				<li class="list-group-item"><a href="setores/iluminacao_som.html">Iluminação e Som</a></li>
+				<li class="list-group-item"><a href="setores/cozinha.html">Cozinha</a></li>
+				<li class="list-group-item"><a href="setores/decoracao.html">Decoração</a></li>
+				<li class="list-group-item"><a href="setores/comercial.html">Comercial</a></li>
+				<li class="list-group-item"><a href="setores/manutencao.html">Manutenção</a></li>
 			</ul>
 		</main>
 
 		<footer>
-			<button onclick="goBack()">Voltar</button>
+			<button class="btn btn-primary" onclick="goBack()">Voltar</button>
 		</footer>
 	
 		<script>

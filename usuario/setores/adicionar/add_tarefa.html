@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<head>		
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+
 		<title>Adicionar</title>
 		<script type="text/javascript" src='dados_add.js'></script>
 	</head>
@@ -20,7 +26,7 @@
 			</form>
 
 			<h3>Funcionários</h3>
-			<a href="funcionarios.html"><input type="submit" value="+"></a>
+			<a href="funcionarios.html"><input class="btn btn-success" ctype="submit" value="+"></a>
 
 			<form id="data1" action="form_action.asp">
 				<br><input id="data" type="datetime-local"><br>
@@ -28,8 +34,8 @@
 		</main>
 
 		<footer>
-			<button class='cancelando'>Cancelar</button>
-			<button class='salvando'>Salvar</button>
+			<button class='cancelando btn btn-warning'>Cancelar</button>
+			<button class='salvando btn btn-info'>Salvar</button>
 		</footer>
 	</body>
 

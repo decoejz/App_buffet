@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<head>		
 		<meta charset="utf-8">
-		<title>Decoração</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+	<title>Decoração</title>
 		<script type="text/javascript" src='decoracao.js'></script>
 	</head>
 	<body>
-		<header><h3>Decoração</h3></header>
+		<header><h3 class="text-center">Decoração</h3></header>
 
 		<main>
 			<h4>Tarefas</h4>
@@ -14,12 +20,12 @@
 			<ul id='lista_de_tarefas'>
 			</ul>
 
-			<a href="adicionar/add_tarefa.html"><input type="submit" value="+"></a>
-			<a href="pag_principal.html"><input type="submit" value="-"></a>
+			<a href="adicionar/add_tarefa.html"><input class="btn btn-success" type="submit" value="+"></a>
+			<a href="pag_principal.html"><input class="btn btn-danger" type="submit" value="-"></a>
 		</main>
 
 		<footer>
-			<button onclick="goBack()">Voltar</button>
+			<button class="btn btn-primary" onclick="goBack()">Voltar</button>
 		</footer>
 
 		<script>

@@ -2,24 +2,32 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <script src="../bootstrap/js/bootstrap.min.js"></script>
+	    
 		<title>Funcionários</title>
 	</head>
 	<body>
-		<header><h3>Funcionários</h3></header>
+		<header><h3 class="text-center">Funcionários</h3></header>
 
 		<main>
 			<h4>Chat</h4>
-				<li><a href=""><img src="../imagens/André.png" alt="Imagem não diponível">André</a></li>
-				<li><a href=""><img src="../imagens/Carla.png" alt="Imagem não diponível">Carla</a></li>
-				<li><a href=""><img src="../imagens/Júlia.png" alt="Imagem não diponível">Júlia</a></li>
-				<li><a href="chat.html"><img src="../imagens/Jorge.png" alt="Imagem não diponível">Jorge</a></li>
-				<li><a href=""><img src="../imagens/Luis.png" alt="Imagem não diponível">Luis</a></li>
-				<li><a href=""><img src="../imagens/Roberta.png" alt="Imagem não diponível">Roberta</a></li>
-				<li><a href=""><img src="../imagens/Miguel.png" alt="Imagem não diponível">Miguel</a></li>
+				<ul class="list-group">
+					<li class="list-group-item"><h3 class="text-center"><a href=""><img src="../imagens/Carla.png" class="img-circle" alt="Imagem não diponível">Carla</a></h3></li>
+					<li class="list-group-item"><h3 class="text-center"><a href=""><img src="../imagens/Júlia.png" class="img-circle" alt="Imagem não diponível">Júlia</a></h3></li>
+					<li class="list-group-item"><h3 class="text-center"><a href=""><img src="../imagens/André.png" class="img-circle" alt="Imagem não diponível">André</a></h3></li>
+					<li class="list-group-item"><h3 class="text-center"><a href="chat.html"><img src="../imagens/Jorge.png" class="img-circle" alt="Imagem não diponível">Jorge</a></h3></li>
+					<li class="list-group-item"><h3 class="text-center"><a href=""><img src="../imagens/Luis.png" class="img-circle" alt="Imagem não diponível">Luis</a></h3></li>
+					<li class="list-group-item"><h3 class="text-center"><a href=""><img src="../imagens/Roberta.png" class="img-circle" alt="Imagem não diponível">Roberta</a></h3></li>
+					<li class="list-group-item"><h3 class="text-center"><a href=""><img src="../imagens/Miguel.png" class="img-circle" alt="Imagem não diponível">Miguel</a></h3></li>
+				</ul>
 		</main>
 
 		<footer>
-			<button onclick="goBack()">Voltar</button>
+			<button class=" btn btn-primary" onclick="goBack()">Voltar</button>
 		</footer>
 
 		<script>

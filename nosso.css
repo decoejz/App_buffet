@@ -1,7 +1,37 @@
 
-.botao_mais{
-
-	position: absolute;
+.direita_inf{
+	position: fixed;
     bottom: 8px;
-    right: 16px;
+    right: 16px;  
+}
+
+.esquerda_inf{
+	position: fixed;
+    bottom: 8px;
+    left: 16px;  
+}
+
+.centralizado{
+	position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+}
+
+.caixa_texto{
+
+ 	width: 350px; 
+	margin: 10px 10px 10px 10px;
+
+}
+
+.botao_centro{
+	position: relative;
+	right: 30%;
+	margin: 10px 10px 10px 10px;
+
+}
+
+.bg_gif{
+	background-image: url("giphy.gif");
 }

@@ -1,6 +1,6 @@
 
 .direita_inf{
-	position: fixed;
+	position: absolute;
     bottom: 8px;
     right: 16px;  
 }
@@ -14,8 +14,9 @@
 .centralizado{
 	position: absolute;
     left: 0;
-    top: 45%;
+    top: 37%;
     width: 100%;
+    padding:10px 15px 20px 15px;
 }
 
 .caixa_texto{
@@ -33,9 +34,23 @@
 }
 
 .bg_gif{
+<<<<<<< HEAD
 	background-image: url("giphy.gif");
 }
 
 .fonte{
 	font-family: 'Great Vibes', cursive;
+=======
+	background-image: url("teste.gif");
+}
+.lista{
+	padding:10px 15px 10px 15px;
+	height: 50px;
+}
+.lista-meio{
+
+}
+.lista-inf{
+
+>>>>>>> 9c0c8a88c04ae0bd3cbe225fac251172c4884c3b
 }

@@ -1,14 +1,14 @@
 
 .direita_inf{
 	position: fixed;
-    bottom: 8px;
-    right: 16px;  
+    bottom: 2%;
+    right: 2%;  
 }
 
 .esquerda_inf{
 	position: fixed;
-    bottom: 8px;
-    left: 16px;  
+    bottom: 2%;
+    left: 2%;  
 }
 
 .centralizado{
@@ -16,26 +16,28 @@
     left: 0;
     top: 37%;
     width: 100%;
-    padding:10px 15px 20px 15px;
+    padding:10% 10% 10% 10%;
 }
 
 .caixa_texto{
 
- 	width: 350px; 
-	margin: 10px 10px 10px 10px;
+ 	width: 110%; 
+	margin: 10% 3% 10% -5%;
 
 }
 
-.botao_centro{
-	position: relative;
-	right: 30%;
-	margin: 10px 10px 10px 10px;
-
-}
 
 .bg_login{
 	background-image: url("imagem_fundo.jpg");
 }
+
+.bg_principal{
+	background-image: url("imagem_fundo2.jpg");
+	height: 100%;
+	width: 100%;
+}
+
+
 
 .fonte{
 	font-family: 'Great Vibes', cursive;

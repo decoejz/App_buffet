@@ -33,12 +33,13 @@
 
 }
 
-.bg_gif{
-	background-image: url("giphy.gif");
+.bg_login{
+	background-image: url("imagem_fundo.jpg");
 }
 
 .fonte{
 	font-family: 'Great Vibes', cursive;
+	font-size: 425%;
 }
 .lista{
 	padding:10px 15px 10px 15px;

@@ -34,13 +34,11 @@
 }
 
 .bg_gif{
-<<<<<<< HEAD
 	background-image: url("giphy.gif");
 }
 
 .fonte{
 	font-family: 'Great Vibes', cursive;
-=======
 	background-image: url("teste.gif");
 }
 .lista{
@@ -52,5 +50,4 @@
 }
 .lista-inf{
 
->>>>>>> 9c0c8a88c04ae0bd3cbe225fac251172c4884c3b
 }

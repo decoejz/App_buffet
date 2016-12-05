@@ -9,27 +9,28 @@
 		<link href="https://github.com/decoejz/app_buffet/blob/master/logo.png" rel="apple-touch-icon" sizes="120x120" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	    <script src="../bootstrap/js/bootstrap.min.js"></script>
-
+		<link href="../nosso.css" rel="stylesheet">	
 		
 		<title>Adicionar</title>
 		<script type="text/javascript" src='dados_add.js'></script>
 	</head>
-	<body>
-		<header>
+	<body class="bg_principal">
+		<header class="text-center">
 			<form id="nome" action="form_action.asp">
-				<input type="text" placeholder="Nova Tarefa"><br>
+				<input type="text" style="width: 95%; height: 50px;" placeholder="Novo Evento"><br>
 			</form>
 		</header>
 
 		<main>
-			<form id="data1" action="form_action.asp">
-				<br><input id="data" type="datetime-local"><br>
+		<h3>Data e hora</h3>
+			<form id="data1" action="form_action.asp" class="text-center">
+				<br><input id="data" type="datetime-local" style="width: 95%;" class="text-center"><br>
 			</form>
 		</main>
 
 		<footer>
-			<button class="btn btn-primary" onclick="goBack()">Cancelar</button>
-			<a href="calendario_2.html"><input class="btn btn-success" type="submit" value="Salvar"></a>
+			<button class="btn btn-warning esquerda_inf" onclick="goBack()">Cancelar</button>
+			<a href="calendario_2.html"><input class="btn btn-info direita_inf" type="submit" value="Salvar"></a>
 		</footer>
 
 		<script>

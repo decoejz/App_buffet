@@ -15,7 +15,6 @@
 	font-size: 200%;
 }
 
-}
 .centralizado{
 	position: absolute;
     left: 0;
@@ -53,14 +52,13 @@
 }
 
 .lista{
-	height: 20%;
 	color:#000000;
 	background-color: #f0f0f0;
 
 }
  .calendario{
-	height: 550px;
-	width: 370px;
+	height: 100%;
+	width: 100%;
  }
 
 .titulo{

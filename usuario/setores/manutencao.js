@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			var a = document.createElement("a");
 			var ulist = document.getElementById("lista_de_tarefas");
 			var newItem = document.createElement("li");
-			newItem.className = "list-group-item";
+			newItem.className = "list-group-item lista";
 
 			a.textContent = i;
 			a.setAttribute('href', "../../cadastro/pag_indisponivel.html");

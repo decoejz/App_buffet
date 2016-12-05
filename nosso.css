@@ -11,6 +11,13 @@
     left: 2%;  
 }
 
+.menosmais{
+	font-size: 200%;
+}
+
+.topo{
+	margin-top: 5%;
+}
 .centralizado{
 	position: absolute;
     left: 0;
@@ -54,3 +61,13 @@
 	height: 550px;
 	width: 370px;
  }
+
+.titulo{
+	font-size: 400%;
+	color: #ffffff;
+}
+
+.subtitulo{
+	padding-top: 7%;
+	font-size: 200%;
+}

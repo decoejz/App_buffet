@@ -9,25 +9,28 @@
 		<link href="https://github.com/decoejz/app_buffet/blob/master/logo.png" rel="apple-touch-icon" sizes="120x120" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+	    <link href="../../nosso.css" rel="stylesheet">
 
 		<title>Manutenção</title>
 		<script type="text/javascript" src='manutencao.js'></script>
 	</head>
-	<body>
-		<header><h3>Manutenção</h3></header>
+	<body class="bg_principal">
+		<header><h3 class="titulo text-center">Manutenção</h3></header>
 
 		<main>
-			<h4 class="text-center">Tarefas</h4>
+			<h4 class="text-center subtitulo">Tarefas</h4>
 
 			<ul id='lista_de_tarefas' class='list-group'>
 			</ul>
+			<div class="direita_inf">
+				<a href="pag_principal.html"><input class="btn btn-danger menosmais" type="submit" value="–"></a>
+				<a href="adicionar/add_tarefa.html"><input class="btn btn-success menosmais" type="submit" value="+"></a>
+			</div>
 
-			<a href="adicionar/add_tarefa.html"><input class="btn btn-success" type="submit" value="+"></a>
-			<a href="pag_principal.html"><input class="btn btn-danger" type="submit" value="-"></a>
 		</main>
 
 		<footer>
-			<button class="btn btn-primary" onclick="goBack()">Voltar</button>
+			<button class="btn btn-primary esquerda_inf" onclick="goBack()">Voltar</button>
 		</footer>
 
 		<script>

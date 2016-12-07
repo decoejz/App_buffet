@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://github.com/decoejz/app_buffet/blob/master/logo.png" rel="apple-touch-icon" sizes="120x120" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+	    <link href="../../nosso.css" rel="stylesheet">
+
+		<title>Comercial</title>
+		<script type="text/javascript" src='bar.js'></script>
+		<!-- <script type="text/javascript" src='editar.js'></script> -->
+	</head>
+	<body class="bg_principal">
+		<header><h3 class="titulo text-center">Bartender</h3></header>
+
+		<main>
+			<h4  class="text-center subtitulo">Tarefas</h4>
+
+			<ul id='lista_de_tarefas' class='list-group centralizado'>
+			</ul>
+			<div class="direita_inf">
+				<a href="pag_principal.html"><input class="btn btn-danger menosmais" type="submit" value="–"></a>
+				<a href="adicionar/add_tarefa.html"><input class="btn btn-success menosmais" type="submit" value="+"></a>
+			</div>
+			
+		</main>
+
+		<footer>
+			<button class="btn btn-primary esquerda_inf" onclick="goBack()">Voltar</button>
+		</footer>
+
+		<script>
+			function goBack() {
+    		window.history.back();
+			}
+		</script>
+		<script>
+			var pagina = 'Bar'
+			var conversao = JSON.stringify(pagina);
+			localStorage.setItem("Pagina", conversao);
+
+			// function editando() {
+			// 	var Nova_Tarefa = document.getElementById("teste").innerHTML;
+
+			// 	var conversao = localStorage.getItem("Infos_comercial");
+			// 	var infos = JSON.parse(conversao);
+
+			// 	console.log(infos);
+
+			// 	var descrição_tarefa = infos["teste"][0];
+			// 	var texto = ''
+			// 	for (i in descrição_tarefa){
+			// 		texto = texto + descrição_tarefa[i];
+			// 	}
+			// 	console.log(texto);
+
+
+
+			// 	var opened = window.open("");
+			// 	opened.document.write("<html><head><title>Editar</title></head><body><header><form id=\"nome1\" action=\"form_action.asp\"><input id=\"nome\" type=\"text\" placeholder="+Nova_Tarefa+"><br></form></header><main><h3>Descrição</h3><form id=\"desc1\" action=\"form_action.asp\"><input id=\"desc\" type=\"text\" name=\'fdescrever\' style=\"height: 100px; width: 500px;\" placeholder="+texto+"><br></form><h3>Funcionários</h3><a href=\"adicionar/funcionarios.html\"><input class=\"btn btn-success\" ctype=\"submit\" value=\"+\"></a><form id=\"data1\" action=\"form_action.asp\"><br><input id=\"data\" type=\"datetime-local\"><br></form></main><footer><button class=\'cancelando btn btn-warning\'>Cancelar</button><button class=\'salvando btn btn-info\'>Salvar</button></footer></body></html>");
+			// }
+		</script>
+	</body>
+</html>

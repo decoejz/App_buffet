@@ -101,6 +101,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 			window.history.back();
 		}
+		else if (pag == 'Bar'){
+			var conversao = localStorage.getItem("Infos_bar")
+			var infos = JSON.parse(conversao);
+
+			var nome_tarefa = document.getElementById("nome").value;
+			console.log(nome_tarefa)
+
+		    var descricao_tarefa = document.getElementById("desc").value;
+		    console.log(descricao_tarefa)
+
+		    var data_tarefa = document.getElementById("data").value;
+			console.log(data_tarefa)
+
+		    infos[nome_tarefa]=[descricao_tarefa,data_tarefa];
+		    var conversao = JSON.stringify(infos);
+			localStorage.setItem("Infos_bar", conversao);
+
+			window.history.back();
+		}
 	}
 
 

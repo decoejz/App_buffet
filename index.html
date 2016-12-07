@@ -77,6 +77,11 @@
  			var conversao = JSON.stringify(infos);
  			localStorage.setItem("Infos_manutencao", conversao);
   		}
+  		if (localStorage.getItem("Infos_bar") == undefined){
+ 			var infos = {};
+ 			var conversao = JSON.stringify(infos);
+ 			localStorage.setItem("Infos_bar", conversao);
+  		}
   		var pagina = ''
   		var conversao = JSON.stringify(pagina);
 		localStorage.setItem("Pagina", conversao);
